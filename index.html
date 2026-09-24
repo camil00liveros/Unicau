@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Universidad del Cauca</title>
+  <meta name="description" content="Universidad del Cauca, fundada en 1827, ofrece programas académicos e impulsa la educación e investigación en Colombia.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- =====================================================
+       ENCABEZADO
+       Las imágenes usan primero la copia local (assets/img)
+       y, si no existe, cargan la URL original (data-fallback).
+       ===================================================== -->
+  <header class="site-header" id="site-header">
+    <a class="brand" href="https://www.unicauca.edu.co/" aria-label="Universidad del Cauca, ir al inicio">
+      <img src="assets/img/logo-unicauca.png"
+           data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/11/Logo-Universidad-del-Cauca-e1715273370946.png"
+           alt="Logo Universidad del Cauca" width="150" height="70">
+    </a>
+
+    <div class="header-main">
+      <!-- Barra superior -->
+      <div class="topbar">
+        <nav class="topbar__links" aria-label="Enlaces institucionales">
+          <a href="https://www.unicauca.edu.co/transparencia/">Transparencia</a>
+          <a href="https://www.unicauca.edu.co/atencion-al-ciudadano/">Atención al Ciudadano</a>
+          <a href="https://www.unicauca.edu.co/participa/">Participa</a>
+        </nav>
+
+        <ul class="topbar__tools">
+          <li>
+            <a class="icon-link" href="https://www.unicauca.edu.co/correo-unicauca/" aria-label="Correo institucional">
+              <img src="assets/img/correo.svg"
+                   data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/10/Correo.svg"
+                   alt="" width="40" height="40">
+            </a>
+          </li>
+          <li>
+            <a class="icon-link" href="https://www.unicauca.edu.co/vicerrectoria-academica/division-de-gestion-de-medios-y-recursos-bibliograficos/" aria-label="Biblioteca">
+              <img src="assets/img/biblioteca.svg"
+                   data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/10/Biblioteca.svg"
+                   alt="" width="40" height="40">
+            </a>
+          </li>
+          <li class="dropdown">
+            <button class="icon-link" type="button" data-toggle aria-expanded="false" aria-controls="dd-perfiles" aria-label="Perfiles">
+              <img src="assets/img/perfiles.svg"
+                   data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/10/Perfiles.svg"
+                   alt="" width="40" height="40">
+              <span class="caret" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown__panel" id="dd-perfiles" data-panel hidden>
+              <li><a href="https://www.unicauca.edu.co/estudiantes/">Estudiantes</a></li>
+              <li><a href="https://www.unicauca.edu.co/aspirantes/">Aspirantes</a></li>
+              <li><a href="https://www.unicauca.edu.co/egresados/">Egresados</a></li>
+              <li><a href="https://www.unicauca.edu.co/profesores/">Profesores</a></li>
+              <li><a href="https://www.unicauca.edu.co/administrativos/">Administrativos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <button class="icon-link" type="button" data-toggle aria-expanded="false" aria-controls="dd-idioma" aria-label="Idioma">
+              <img src="assets/img/idioma.svg"
+                   data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/10/Idioma.svg"
+                   alt="" width="40" height="40">
+              <span class="caret" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown__panel" id="dd-idioma" data-panel hidden>
+              <li><a href="https://www.unicauca.edu.co/portaleningles">EN - English</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Barra principal -->
+      <div class="mainbar">
+        <button class="menu-btn" type="button" data-toggle aria-expanded="false" aria-controls="mega-menu">
+          <span class="burger" aria-hidden="true"></span>
+          <span>Menú</span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+
+        <ul class="mainnav">
+          <li>
+            <button type="button" data-toggle aria-expanded="false" aria-controls="mega-oferta">
+              Oferta Académica <span class="caret" aria-hidden="true"></span>
+            </button>
+          </li>
+          <li><a href="https://www.unicauca.edu.co/vicerrectoria-de-investigaciones/">Investigación</a></li>
+          <li><a href="https://www.unicauca.edu.co/vicerrectoria-de-cultura-y-bienestar/">Cultura y Bienestar</a></li>
+          <li><a href="https://www.unicauca.edu.co/la-universidad/">La Universidad</a></li>
+          <li class="has-dropdown">
+            <!-- Quita la clase "is-active" si no quieres el fondo resaltado de la captura -->
+            <button class="is-active" type="button" data-toggle aria-expanded="false" aria-controls="dd-admisiones">
+              Admisiones <span class="caret" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown__panel" id="dd-admisiones" data-panel hidden>
+              <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/darca/inscripcionesap/">Programas de Pregrado</a></li>
+              <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-posgrados/inscripciones/">Programas de Posgrado</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="search-btn" type="button" id="open-search" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l6 6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mega menú: Oferta Académica -->
+    <div class="mega" id="mega-oferta" data-panel hidden>
+      <div class="mega__inner">
+        <section>
+          <h3><a href="https://www.unicauca.edu.co/vicerrectoria-academica/">Vicerrectoría Académica</a></h3>
+          <ul>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-artes/">Facultad de Artes</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-agrarias/">Facultad de Ciencias Agrarias</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-de-la-salud/">Facultad de Ciencias de la Salud</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-contables-economicas-y-administrativas/">Facultad de Ciencias Contables, Económicas y Administrativas</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-humanas-y-sociales/">Facultad de Ciencias Humanas y Sociales</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-naturales-exactas-y-de-la-educacion/">Facultad de Ciencias Naturales, Exactas y de la Educación</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-derecho-ciencias-politicas-y-sociales">Facultad de Derecho, Ciencias Políticas y Sociales</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ingenieria-civil/">Facultad de Ingeniería Civil</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ingenieria-electronica-y-telecomunicaciones/">Facultad de Ingeniería Electrónica y Telecomunicaciones</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-posgrados/">Centro de Posgrados</a></h3>
+          <ul class="sub">
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-posgrados/programas/?e-filter-37f2bcf-category=especializaciones">Especializaciones</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-posgrados/programas/?e-filter-37f2bcf-category=maestrias">Maestrías</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-posgrados/programas/?e-filter-37f2bcf-category=doctorados">Doctorados</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/unicauca-virtual/">Programas Virtuales</a></li>
+            <li><a href="https://www.unicauca.edu.co/la-universidad/rectoria/oficina-de-relaciones-interinstitucionales-e-internacionales/">Relaciones Interinstitucionales (ORII)</a></li>
+            <li><a href="https://www.unicauca.edu.co/cecav/">Educación Continua CECAV</a></li>
+          </ul>
+          <ul class="sub">
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/cecav/cecav-eventos/">Cursos de Extensión</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Información de Interés</h3>
+          <ul>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/calendario-academico/">Calendario Académico</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Mega menú: Menú (sistemas y servicios) -->
+    <div class="mega" id="mega-menu" data-panel hidden>
+      <div class="mega__inner">
+
+        <!-- Solo se ve en pantallas pequeñas -->
+        <section class="only-mobile">
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/">Oferta Académica</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-de-investigaciones/">Investigación</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-de-cultura-y-bienestar/">Cultura y Bienestar</a></li>
+            <li><a href="https://www.unicauca.edu.co/la-universidad/">La Universidad</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/darca/inscripcionesap/">Admisiones: Pregrado</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-posgrados/inscripciones/">Admisiones: Posgrado</a></li>
+            <li><a href="https://www.unicauca.edu.co/transparencia/">Transparencia</a></li>
+            <li><a href="https://www.unicauca.edu.co/atencion-al-ciudadano/">Atención al Ciudadano</a></li>
+            <li><a href="https://www.unicauca.edu.co/participa/">Participa</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Sistemas de información</h3>
+          <ul>
+            <li><a href="https://simca.unicauca.edu.co/simca/">Sistema Integrado de Matrícula y Control Académico (SIMCA)</a></li>
+            <li><a href="https://www.unicauca.edu.co/biblioteca/">Biblioteca</a></li>
+            <li><a href="https://www.unicauca.edu.co/sisvri/">Sistema de Información Vicerrectoría de Investigaciones (SIVRI)</a></li>
+            <li>
+              <span class="mega__label">Sistemas de Pagos</span>
+              <ul class="sub">
+                <li><a href="https://pagosonline.sirec.unicauca.edu.co/search">Pagos GouPagos</a></li>
+                <li><a href="https://simca.unicauca.edu.co/reciboMatricula/">Recibo Matrícula</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.unicauca.edu.co/contratacion/viceadmin/contratacion-lgarantias/">Sistema de Contratación</a></li>
+            <li><a href="https://www.unicauca.edu.co/eplux_unicauca/login.php">Solicitud de Mantenimiento</a></li>
+            <li><a href="http://alejandria.unicauca.edu.co">Catálogo de Biblioteca</a></li>
+            <li><a href="https://tic.unicauca.edu.co/satis/pages/UI.php">Sistema de Atención y Soporte (SaTis)</a></li>
+            <li><a href="https://www.unicauca.edu.co/bancoOferentes/">Banco de Aspirantes</a></li>
+            <li><a href="https://rectoria.unicauca.edu.co/oficina-control-interno/#/auth/login">Sistema de Control Interno</a></li>
+            <li><a href="https://das.unicauca.edu.co/rfisicos/#/">Sistema de Control de Recursos Físicos</a></li>
+            <li><a href="https://financiera.unicauca.edu.co/ISquid/login.xhtml">Sistema de Recaudo SQUID</a></li>
+            <li><a href="https://secgral.unicauca.edu.co/empadronamiento/#/consultar">Sistema de Empadronamiento</a></li>
+            <li><a href="https://votaciones.unicauca.edu.co/">Sistema de Votaciones en Línea (SiVot)</a></li>
+            <li><a href="https://das.unicauca.edu.co/sab/login">Sistema de Adquisición de Bienes (SAB)</a></li>
+            <li><a href="https://www.unicauca.edu.co/sga/login">Sistema de Gestión Ambiental (SGA)</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Plataformas virtuales</h3>
+          <ul>
+            <li><a href="https://univirtual.unicauca.edu.co/moodle/login/index.php">MOODLE</a></li>
+            <li><a href="http://eva.unicauca.edu.co/register/">EVA</a></li>
+            <li><a href="http://selene.unicauca.edu.co">SELENE</a></li>
+          </ul>
+
+          <h3 class="mega__gap">Nuestros centros</h3>
+          <ul>
+            <li><a href="https://www.unicauca.edu.co/la-universidad/rectoria/centro-de-gestion-de-la-calidad/">Centro de Gestión de la Calidad y la Acreditación Institucional</a></li>
+            <li><a href="https://www.unicauca.edu.co/pagina-en-construccion/">Centro de Gestión de las Comunicaciones</a></li>
+            <li><a href="https://www.unicauca.edu.co/cecav/">Centro de Educación Continua, Abierta y Virtual</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-posgrados/">Centro de Posgrados</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/centro-de-regionalizacion/">Centro de Regionalización</a></li>
+          </ul>
+
+          <h3 class="mega__gap">Repositorio Unicauca</h3>
+          <ul>
+            <li><a href="https://www.unicauca.edu.co/lvmen/">Programa LVMEN</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-humanas-y-sociales/archivo-historico/">Archivo Histórico</a></li>
+            <li><a href="https://www.unicauca.edu.co/pagina-en-construccion/">Gestión Documental</a></li>
+            <li><a href="https://www.unicauca.edu.co/documentos-publicos/">Documentos Públicos</a></li>
+            <li><a href="https://www.unicauca.edu.co/biblioteca/catalogo-y-repositorio/">Repositorio Biblioteca</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Servicios Unicauca</h3>
+          <ul>
+            <li><a href="https://portalantiguo.unicauca.edu.co/versionP/node/25642">Consultorio Jurídico</a></li>
+            <li>
+              <span class="mega__label">Museos</span>
+              <ul class="sub">
+                <li><a href="https://www.unicauca.edu.co/museos/museomosq/info.html">Museo Casa Mosquera</a></li>
+                <li><a href="https://www.unicauca.edu.co/museos/panteon/index.html">Panteón de los Próceres</a></li>
+                <li><a href="https://facultades.unicauca.edu.co/museonatural/">Museo de Historia Natural</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-humanas-y-sociales/quienes-somos-unilingua/">Unilingua</a></li>
+            <li><a href="https://www.unicauca.edu.co/la-universidad/rectoria/unisalud/">Unidad de Salud</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-administrativa/division-de-tecnologias-de-la-informacion-y-las-comunicaciones/carnetizacion/">Carnetización</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-de-la-salud/centro-de-salud-alfonzo-lopez/">Centro Universitario de Salud Alfonso López</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-de-cultura-y-bienestar/centro-de-escucha/">Centro de Escucha</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/area-de-egresados/bolsa-de-empleo/">Bolsa de Empleo</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-naturales-exactas-y-de-la-educacion/auditorios/">Auditorios</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-de-la-salud/centro-de-escritura/">Centro de Escritura</a></li>
+            <li><a href="https://www.unicauca.edu.co/vicerrectoria-administrativa/division-de-gestion-del-talento-humano/seguridad-y-salud-en-el-trabajo/">Seguridad y Salud en el Trabajo</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       CONTENIDO
+       ===================================================== -->
+  <main id="contenido">
+
+    <!-- =====================================================
+         SLIDER (VACÍO)
+         Para agregar tus imágenes:
+         1) Copia tus archivos en la carpeta  assets/slider/
+         2) Dentro de <div class="slider__track"> pega un bloque
+            <figure class="slide"> por cada imagen (ejemplo abajo).
+         - 1 imagen  : se muestra fija.
+         - 2 o más   : se activan flechas, puntos y cambio automático.
+         - Tamaño recomendado de cada imagen: 1800 x 784 px (proporción 2.3 : 1).
+           Si tiene otra proporción, se recorta para llenar el espacio.
+         ===================================================== -->
+    <section class="hero" aria-label="Destacados">
+      <div class="slider" id="slider" data-state="empty" aria-roledescription="carrusel">
+
+        <div class="slider__viewport">
+          <div class="slider__track" id="slider-track">
+
+            <!-- ===== PEGA AQUÍ TUS DIAPOSITIVAS =====
+
+            <figure class="slide">
+              <img src="assets/slider/slide-1.jpg" alt="Describe la imagen aquí">
+              <a class="slide__btn" href="https://www.unicauca.edu.co/">Ver más</a>   (el botón es opcional)
+            </figure>
+
+            <figure class="slide">
+              <img src="assets/slider/slide-2.jpg" alt="Describe la imagen aquí">
+            </figure>
+
+            ======================================= -->
+            <figure class="slide">
+                <img src="assets/slider/imagen1.png" alt="Describe la imagen">
+                <a class="slide__btn" href="https://...">Ver más</a>   <- opcional
+            </figure>
+
+
+          </div>
+
+          <!-- Mensaje que se oculta solo cuando agregas imágenes -->
+          <div class="slider__empty">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M4 18l5.5-5.5 4 4 2.5-2.5L20 19"/></svg>
+            <p>Espacio para tus imágenes</p>
+            <small>Tamaño recomendado: 1800 × 784 px</small>
+          </div>
+        </div>
+
+        <button class="slider__arrow slider__arrow--prev" type="button" aria-label="Diapositiva anterior" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="slider__arrow slider__arrow--next" type="button" aria-label="Diapositiva siguiente" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+
+        <div class="slider__dots" role="group" aria-label="Seleccionar diapositiva"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       PIE DE PÁGINA
+       ===================================================== -->
+  <footer class="site-footer">
+    <div class="site-footer__qr">
+      <a href="https://wa.me/573180032204" target="_blank" rel="noopener" aria-label="Abrir chat de WhatsApp con Unicau">
+        <img src="assets/img/qr-whatsapp.svg" width="120" height="120"
+             alt="Código QR para chatear por WhatsApp con Unicau">
+      </a>
+      <p>Escanea el código y chatea con nosotros por WhatsApp</p>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       ELEMENTOS FLOTANTES
+       ===================================================== -->
+
+  <!-- Accesibilidad -->
+  <div class="a11y">
+    <button class="a11y__toggle" type="button" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel" aria-label="Herramientas de accesibilidad">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+    </button>
+    <div class="a11y__panel" id="a11y-panel" role="region" aria-label="Herramientas de accesibilidad" hidden>
+      <button type="button" data-action="fs-up">Aumentar letra</button>
+      <button type="button" data-action="fs-down">Reducir letra</button>
+      <button type="button" data-action="sp-up">Aumentar Espaciado</button>
+      <button type="button" data-action="sp-down">Disminuir Espaciado</button>
+      <button type="button" data-action="gray" aria-pressed="false">Escala de Grises</button>
+      <button type="button" data-action="contrast" aria-pressed="false">Contraste</button>
+      <button type="button" data-action="dyslexia" aria-pressed="false">Fuente Dislexia</button>
+      <button type="button" data-action="links" aria-pressed="false">Resaltar Enlaces</button>
+      <button type="button" data-action="reset" class="a11y__reset">Restablecer</button>
+    </div>
+  </div>
+
+  <!-- Botones flotantes: accesos rápidos + WhatsApp -->
+  <div class="floating">
+  <!-- Accesos rápidos -->
+  <div class="fab">
+    <button class="fab__btn" type="button" id="fab-toggle" aria-expanded="false" aria-controls="fab-panel" aria-label="Accesos rápidos">
+      <svg viewBox="0 0 34 34" aria-hidden="true">
+        <rect x="4" y="4" width="10" height="10" rx="3"/><rect x="20" y="4" width="10" height="10" rx="3"/>
+        <rect x="4" y="20" width="10" height="10" rx="3"/><rect x="20" y="20" width="10" height="10" rx="3"/>
+      </svg>
+    </button>
+    <ul class="fab__panel" id="fab-panel" hidden>
+      <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/calendario-academico/">
+        <img src="assets/img/calendario-academico.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/07/Calendario-Academico_Blanco@3x.png" alt="" width="28" height="28">Calendario Académico</a></li>
+      <li><a href="https://simca.unicauca.edu.co/simca/">
+        <img src="assets/img/simca.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/SIMCA@300x.png" alt="" width="28" height="28">SIMCA</a></li>
+      <li><a href="https://www.unicauca.edu.co/lvmen/">
+        <img src="assets/img/lvmen.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/LVMEN@300x.png" alt="" width="28" height="28">Programa LVMEN</a></li>
+      <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-humanas-y-sociales/acceso-a-pruebas/">
+        <img src="assets/img/psi.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/psi_2@300x.png" alt="" width="28" height="28">PSI</a></li>
+      <li><a href="https://pagosonline.sirec.unicauca.edu.co/search">
+        <img src="assets/img/pse.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/pse@300x.png" alt="" width="28" height="28">GOU PAGOS</a></li>
+    </ul>
+  </div>
+
+  <!-- WhatsApp: cambia el número en el enlace (formato wa.me/57 + número) -->
+  <a class="whatsapp" href="https://wa.me/573180032204" target="_blank" rel="noopener"
+     aria-label="Chatear por WhatsApp. Hola, soy Unicau, tu asistente virtual.">
+    <span class="whatsapp__btn" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </span>
+    <span class="whatsapp__tip" aria-hidden="true">Hola, soy Unicau, tu asistente virtual.</span>
+  </a>
+  </div>
+
+  <!-- Buscador -->
+  <div class="search-overlay" id="search" role="dialog" aria-modal="true" aria-label="Buscar en el sitio" hidden>
+    <button class="search-overlay__close" type="button" id="close-search" aria-label="Cerrar buscador">&times;</button>
+    <p>Encuentra lo que necesitas en segundos. Explora, descubre y obtén respuestas rápidas. ¡Comienza tu búsqueda ahora!</p>
+    <form class="search-form" action="https://www.unicauca.edu.co/" method="get" target="_blank" role="search">
+      <label class="sr-only" for="search-input">Buscar</label>
+      <input id="search-input" type="search" name="s" placeholder="¿Qué estás buscando?" autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+    <ul class="quick-links">
+      <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/calendario-academico">
+        <img src="assets/img/calendario-academico.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/07/Calendario-Academico_Blanco@3x.png" alt="" width="64" height="64">Calendario Académico</a></li>
+      <li><a href="https://simca.unicauca.edu.co/simca/">
+        <img src="assets/img/simca.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/SIMCA@300x.png" alt="" width="64" height="64">SIMCA</a></li>
+      <li><a href="https://www.unicauca.edu.co/lvmen">
+        <img src="assets/img/lvmen.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/LVMEN@300x.png" alt="" width="64" height="64">Programa LVMEN</a></li>
+      <li><a href="https://www.unicauca.edu.co/vicerrectoria-academica/facultad-de-ciencias-humanas-y-sociales/acceso-a-pruebas/">
+        <img src="assets/img/psi.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/psi_2@300x.png" alt="" width="64" height="64">PSI</a></li>
+      <li><a href="https://pagosonline.sirec.unicauca.edu.co/search">
+        <img src="assets/img/pse.png" data-fallback="https://www.unicauca.edu.co/wp-content/uploads/2023/08/pse@300x.png" alt="" width="64" height="64">GOU PAGOS</a></li>
+    </ul>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

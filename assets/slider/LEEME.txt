@@ -1,0 +1,11 @@
+Coloca aquí las imágenes de tu slider (JPG, PNG o WEBP).
+Tamaño recomendado: 1800 x 784 px (proporción 2.3 : 1).
+
+Luego regístralas en index.html, dentro de <div class="slider__track">, así:
+
+  <figure class="slide">
+    <img src="assets/slider/mi-imagen.jpg" alt="Describe la imagen">
+    <a class="slide__btn" href="https://...">Ver más</a>   <- opcional
+  </figure>
+
+1 imagen = fija. 2 o más = flechas, puntos y cambio automático cada 6 segundos.

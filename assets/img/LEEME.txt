@@ -1,0 +1,7 @@
+Coloca aquí las imágenes locales del encabezado (opcional). Los nombres exactos están en la tabla del README.md:
+
+logo-unicauca.png, correo.svg, biblioteca.svg, perfiles.svg, idioma.svg,
+calendario-academico.png, simca.png, lvmen.png, psi.png, pse.png
+
+Si un archivo no está, index.html carga automáticamente la imagen desde unicauca.edu.co.
+(Las imágenes del slider van en assets/slider/, no aquí.)
