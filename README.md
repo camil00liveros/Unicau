@@ -2,9 +2,6 @@
 
 
 
-
-
-
 Réplica en HTML, CSS y JavaScript (sin frameworks) del encabezado y el slider de
 https://www.unicauca.edu.co/
 
