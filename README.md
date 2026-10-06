@@ -13,9 +13,6 @@ y un pie de página con código QR de WhatsApp (120 x 120 px).
 
 
 
-
-
-
 ## Cómo ejecutarlo en Visual Studio Code
 
 1. Descomprime la carpeta y ábrela en VS Code (Archivo > Abrir carpeta).
